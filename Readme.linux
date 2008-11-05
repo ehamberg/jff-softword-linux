@@ -1,0 +1,27 @@
+Softworld Linux port
+Released Sun 27 May 2007
+
+Original (Win32) source available from http://www.j-f-f.net/softworld-src.html
+Kudos to J-F-F for releasing the source code! :-)
+
+This Linux port was done by Erlend Hamberg <hamberg@stud.ntnu.no>.
+
+This is pretty much a 1:1 port, I have just ripped out the Win32 API code and
+replaced it with SDL code and fixed case-sensitivity issues. I guess it's
+possible to reduce the executable size by stripping it and using an executable
+packer such as upx.
+
+When just running it with ./softworld, the intro will run in fullscreen in
+640x480 (32 bpp), but you can change this with the following switches:
+--windowed 		- run in windowed mode
+--resx XRES		- set width
+--resy YRES 	- set height
+--16			- 16 bpp
+
+To build the intro you need these libraries (development versions):
+* SDL
+* OpenGL
+* GLU
+
+Have fun, and don't hesitate to send me an email me if you have any comments or
+problems.
