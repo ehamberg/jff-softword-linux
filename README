@@ -4,6 +4,10 @@ Released Sun 27 May 2007
 Original (Win32) source available from http://www.j-f-f.net/softworld-src.html
 Kudos to J-F-F for releasing the source code! :-)
 
+Pouet page with screenshots: http://www.pouet.net/prod.php?which=5339
+
+-------------------------------------------------------------------------------
+
 This Linux port was done by Erlend Hamberg <ehamberg at gmail>.
 
 This is pretty much a 1:1 port, I have just ripped out the Win32 API code and
