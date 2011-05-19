@@ -13,10 +13,10 @@ packer such as upx.
 
 When just running it with ./softworld, the intro will run in fullscreen in
 640x480 (32 bpp), but you can change this with the following switches:
---windowed 		- run in windowed mode
---resx XRES		- set width
---resy YRES 	- set height
---16			- 16 bpp
+--windowed              - run in windowed mode
+--resx XRES             - set width
+--resy YRES             - set height
+--16                    - 16 bpp
 
 To build the intro you need these libraries (development versions):
 * SDL
