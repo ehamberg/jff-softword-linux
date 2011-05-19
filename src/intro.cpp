@@ -530,7 +530,7 @@ GLvoid ReSizeGLScene(GLsizei width, GLsizei height)     // Resize And Initialize
     glLoadIdentity();                                   // Reset The Modelview Matrix
 }
 
-int InitGL(GLvoid)                                      // All Setup For OpenGL Goes Here
+int InitGL()                                      // All Setup For OpenGL Goes Here
 {
     GLfloat     L0dif[]= { 1.0f,1.0f,1.0f};
     GLfloat     L0spe[]= { 1.0f,1.0f,1.0f};
@@ -612,7 +612,7 @@ int InitGL(GLvoid)                                      // All Setup For OpenGL 
 
 
 
-GLvoid KillGLWindow(GLvoid)                             // Properly Kill The Window
+GLvoid KillGLWindow()                             // Properly Kill The Window
 {
     SDL_FreeSurface(screen);
     SDL_Quit();
@@ -1161,7 +1161,7 @@ void Affiche_Part5()
 }
 
 
-int DrawGLScene(GLvoid)                                 // Here's Where We Do All The Drawing
+int DrawGLScene()                                 // Here's Where We Do All The Drawing
 {
     //  float   Zdep=-400.0f,espacement=150.0f;
     //  int     i,j,k;
