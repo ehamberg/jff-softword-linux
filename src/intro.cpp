@@ -392,7 +392,7 @@ int memtell(unsigned int handle)
 #endif
 
 
-void Affiche_texte(char *texte,long taille,long x,long y, GLuint Texture)
+void Affiche_texte(const char *texte,long taille,long x,long y, GLuint Texture)
 {
     float val = 0.125f,pos;
     float depx,espace,depy,posx,posy;
@@ -625,7 +625,7 @@ GLvoid KillGLWindow(GLvoid)                             // Properly Kill The Win
  *  bits            - Number Of Bits To Use For Color (8/16/24/32)          *
  *  fullscreenflag  - Use Fullscreen Mode (true) Or Windowed Mode (false)   */
 
-bool CreateGLWindow(char* title, int width, int height, int bits, bool fullscreenflag)
+bool CreateGLWindow(const char* title, int width, int height, int bits, bool fullscreenflag)
 {
     if (SDL_Init(SDL_INIT_VIDEO) != 0) {
         std::cerr << "Unable to initialize SDL: " << SDL_GetError() << std::endl;
